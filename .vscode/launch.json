@@ -9,7 +9,8 @@
             "name": "Listen for XDebug",
             "type": "php",
             "request": "launch",
-            "port": 9000
+            "port": 9000,
+            "program":"/home/dai/PHPlearning/1712131_test.php"
         },
         {
             "name": "Launch currently open script",
@@ -18,6 +19,20 @@
             "program": "${file}",
             "cwd": "${fileDirname}",
             "port": 9000
+        },
+        {
+            "name": "使用本机 Chrome 调试",
+            "type": "chrome",
+            "request": "launch",
+            //"file": "${fileDirname}",
+            "url": "http://localhost/1712131_test.php",
+            //  "url": "http://mysite.com/index.html", //使用外部服务器时,请注释掉 file, 改用 url, 并将 useBuildInServer 设置为 false "http://mysite.com/index.html
+            "runtimeExecutable": "/usr/bin/google-chrome-stable", // 改成您的 Chrome 安装路径
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            //  "preLaunchTask":"build",
+            "userDataDir": "${tmpdir}",
+            "port": 5433
         }
     ]
 }
