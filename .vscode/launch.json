@@ -25,13 +25,13 @@
             "type": "chrome",
             "request": "launch",
             //"file": "${fileDirname}",
-            "url": "http://localhost/1712131_test.html",
+            "url": "http://daimonster.6655.la:15080/index.html",
             //  "url": "http://mysite.com/index.html", //使用外部服务器时,请注释掉 file, 改用 url, 并将 useBuildInServer 设置为 false "http://mysite.com/index.html
             "runtimeExecutable": "/usr/bin/google-chrome-stable", // 改成您的 Chrome 安装路径
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}",
             //  "preLaunchTask":"build",
-            "userDataDir": "${tmpdir}",
+            "userDataDir": "${/temp/tmpdir}",
             "port": 5433
         }
     ]
