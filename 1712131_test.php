@@ -1,8 +1,5 @@
 <?php 
-$string = "就是就是";
-var_dump($string);
-echo "<br />";
-$string = 9494;
-var_dump($string);
-echo "<br />";
+    $arr('apple' => '苹果');
+	if( isset($arr) ) {print_r($arr);}
+	
 ?>
